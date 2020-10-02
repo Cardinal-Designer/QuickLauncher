@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="add">
+    <file>add_.svg</file>
+  </qresource>
+  <qresource prefix="run">
+    <file>run.svg</file>
+  </qresource>
+  <qresource prefix="add_A">
+    <file>add.svg</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>setting.svg</file>
+  </qresource>
+</RCC>
