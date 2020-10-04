@@ -13,8 +13,10 @@ else:
 next_ = None
 if os.name == 'nt':
     next_ = '\\'
+    wrapper_file = "wrapper.exe"
 else:
     next_ = '/'
+    wrapper_file = "wrapper"
 # 针对 Linux 和 windows 的不同，更改路径中的 反斜杠(\) 或 斜杠(/)
 
 def dir_mix(*dirs):
@@ -28,3 +30,8 @@ def path_read(path):
 root = path_read(Workpath[:-1])
 
 Package_path = path_read([root,"Package"]) # Package 扫描目录
+
+Player_path = path_read([root,"Player"])
+
+wrapper_path = path_read([root,"wrapper",wrapper_file])
+
